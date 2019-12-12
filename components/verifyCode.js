@@ -13,15 +13,9 @@ export default class VerifyCode extends Component {
 
 
     }
-    _home(){
-    this.setState({click:7,top:50},()=>{
-    console.log('VerifyCode')
-    console.log(this.state.top)
-
-    console.log(this.state.click)
-  this.props.changeState(this.state.click,this.state.top);})
-
-
+    _home=() => {
+     // this.props.navigation.navigate('Home');
+console.log('finished')
     }
   
     render() {

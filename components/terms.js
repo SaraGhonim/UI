@@ -17,7 +17,7 @@ export default class Terms extends Component {
      _continue(){
 
       this.setState({click:4,top:50},()=>{
-        console.log('Terms')
+        console.log('Termsssss')
         console.log(this.state.top)
 
         console.log(this.state.click)

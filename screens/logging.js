@@ -24,26 +24,25 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import SwipeUpDown from'react-native-swipe-up-down';
-import CreateAcc from'./components/createAcc';
-import SignIn from'./components/signIn';
-import Terms from'./components/terms';
+import CreateAcc from'../components/createAcc';
+import SignIn from'../components/signIn';
+import Terms from'../components/terms';
 
-import BasicInfo from'./components/basicInfo';
-import PhoneNumber from'./components/phoneNumber';
-import Welcome from './components/wlcome';
-import Verification from './components/verifyCode';
-import i1 from './assets/i1.png';
-import Home from'./screens/home.js';
+import BasicInfo from'../components/basicInfo';
+import PhoneNumber from'../components/phoneNumber';
+import Welcome from '../components/wlcome';
+import Verification from '../components/verifyCode';
+import i1 from '../assets/i1.png';
 
 
-class App extends  Component{
+class Logging extends  Component{
   constructor(props) {
     super(props);
     this.changeState=this.changeState.bind(this);
 
     this.state = {
       animation: 'easeInEaseOut',
-      clicked: 1,
+      clicked:5,
       X:130,
       icon1:i1
     }
@@ -51,6 +50,7 @@ class App extends  Component{
   };
 
   changeState= (clicked , X) =>{
+      console.log('hnaa')
     this.setState({clicked:clicked,X:X},()=>{this.swipeUpDownRef.showFull(X);
     
     });
@@ -106,7 +106,7 @@ render()
         (<Verification  changeState={this.changeState} />)
         :
 
-        (<Home />)
+        (<BasicInfo  changeState={this.changeState} />)
 
         )
        )
@@ -164,4 +164,4 @@ const styles = StyleSheet.create({
   
 });
 
-export default App;
+export default Logging;
