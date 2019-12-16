@@ -15,11 +15,10 @@ class WhereToGo extends React.Component {
 
   // Fetch the token from storage then navigate to our appropriate place
   _bootstrapAsync = async() => {
-   const userToken = false;
-
+   const userToken = true;
     // This will switch to the App screen or Auth screen and this loading
     // screen will be unmounted and thrown away.
-    this.props.navigation.navigate(userToken ? 'App' : 'Logging');
+    this.props.navigation.navigate(userToken ? 'HomeStack' : 'FirstStack');
 
   };
 

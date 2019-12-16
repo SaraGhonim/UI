@@ -40,7 +40,7 @@ autoCorrect={false} multiline={false}
 </View>   
    
 
-<TouchableOpacity style={styles.buttonContainer2}  onPress={this._continue}>
+ <TouchableOpacity style={styles.buttonContainer2}  onPress={this._continue}>
    <Text style={{textAlign:'center',  paddingTop:5,color:'white'}}>Agree & Continue</Text>
   </TouchableOpacity>  
 

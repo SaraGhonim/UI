@@ -70,7 +70,7 @@ console.log('finished')
 
    
    
-   <TouchableOpacity style={styles.buttonContainer2} onPress={this._home}>
+   <TouchableOpacity style={styles.buttonContainer2} onPress={()=>this.props.navigation.navigate('Home')}>
    <Text style={{textAlign:'center',  paddingTop:5,color:'white'}}>Next</Text>
   </TouchableOpacity>  
 
